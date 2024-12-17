@@ -1,42 +1,121 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+	--background: #f6fbff;
+	--foreground: #aea7a7;
+	--text-color: #000000;
+	--green-color: #4a9231;
+	--lightblue-color: #81A1C7;
 }
 
 html,
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
+	max-width: 100vw;
+	/* overflow-x: hidden; */
+	text-wrap: balance;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	height: 100%;
+	overflow: visible;
+	margin: 0;
+	color: var(--text-color);
+	background: var(--background);
+	font-family: Arial, Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+section {
+	position: relative;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+h1,
+h2 {
+	font-family: 'Josefin Sans', sans-serif;
+	text-transform: uppercase;
+	padding-bottom: 24px;
+}
+h1 {
+	font-size: 32px;
+}
+h2 {
+	font-size: 30px;
+}
+h3 {
+	padding-bottom: 24px;
+}
+
+p {
+	font-family: 'Actor', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+	color: inherit;
+	text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+.wrapper {
+	max-width: 1440px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 80px 24px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.row {
+	flex-direction: row;
+}
+.text-center {
+	text-align: center;
+	max-width: 840px;
+}
+.hero {
+	height: 286px;
+	background-size: cover;
+	background-position: center bottom;
+}
+
+.hero-text {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+	h1 {
+		max-width: 600px;
+	}
+	p {
+		max-width: 712px;
+	}
+}
+.main-btn {
+	display: flex;
+	gap: 12px;
+	padding: 12px 20px;
+	margin: 40px 0;
+	font-family: 'Inria Sans', sans-serif;
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 30px;
+	color: #fff;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 4px;
+	background-color: var(--lightblue-color);
+	img {
+		height: 28px;
+	}
+}
+.green {
+	color: var(--green-color);
 }

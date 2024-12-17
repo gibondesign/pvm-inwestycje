@@ -1,0 +1,29 @@
+nav {
+	background-color: #fbfdff;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+}
+
+.navbar {
+	width: 1440px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding: 12px 20px;
+}
+
+.menu {
+	display: flex;
+	flex-direction: row;
+	gap: 28px;
+	font-family: 'Inria Sans', sans-serif;
+	color: black;
+	text-transform: uppercase;
+	list-style: none;
+}
