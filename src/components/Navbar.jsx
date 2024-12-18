@@ -22,7 +22,10 @@ export default function Navbar( {lang}) {
 					<li>
 						<Link href={`/${lang}/about-us`}>{translations[lang].about}</Link>
 					</li>
-					<li><Link href="/realizations">{translations[lang].realizations}</Link></li>
+					<li>
+						<Link href={`/${lang}/realizations`}>{translations[lang].realizations}</Link>
+					</li>
+				
 					<li>Energetics</li>
 					<li>References</li>
 					<li>Contact</li>
