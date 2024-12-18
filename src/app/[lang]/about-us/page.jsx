@@ -28,10 +28,10 @@ const {lang} = params
 						<img src="/aboutus2-icon.svg" alt="" />
 					</div>
 					<div className="about-us-btns">
-						<Link href=''>
+						<Link href={`/${lang}/#offer`}>
 						<button className='main-btn'>{translations[lang]?.btn1 || 'title!'}</button>
 						</Link>
-						<Link href=''>
+						<Link href={`/${lang}/realizations`}>
 						<button className='main-btn'>{translations[lang]?.btn2 || 'title!'}</button>
 						</Link>
 					</div>

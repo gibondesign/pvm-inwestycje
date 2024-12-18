@@ -33,7 +33,7 @@ const {lang} = params
 			</section>
 		
 			<section>
-				<div className="wrapper">
+				<div className="wrapper" id='offer'>
 					<h2>{translations[lang]?.offer.title || 'Offer!'}</h2>
 					<p className="text-center">{translations[lang]?.offer.description || 'title!'}	
 					</p>
