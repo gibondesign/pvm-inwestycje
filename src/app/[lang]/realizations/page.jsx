@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import './realizations.css'
 import translations from '@/data/realizationsPage'
 import AccordionItem from '@/components/AccordionItem'

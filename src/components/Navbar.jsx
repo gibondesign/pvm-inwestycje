@@ -10,12 +10,14 @@ export default function Navbar({ lang }) {
 			about: "about us",
 			realizations: "realizations",
 			contact: "Contact",
+			references: 'References'
 		},
 		pl: {
 			home: "Strona główna",
 			about: "o nas",
 			realizations: "realizacje",
 			contact: "Kontakt",
+			references: 'Referencje'
 		},
 	};
 
@@ -37,9 +39,13 @@ export default function Navbar({ lang }) {
 							{translations[lang].realizations}
 						</Link>
 					</li>
+					<li>
+						<Link href={`/${lang}/references`}>
+							{translations[lang].references}
+						</Link>
+					</li>
 
 					{/* <li>Energetics</li> */}
-					{/* <li>References</li> */}
 					<li>
 						<a href="#contact">{translations[lang].contact}</a>
 					</li>
