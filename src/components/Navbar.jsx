@@ -1,63 +1,46 @@
+"use client";
+
 import Link from "next/link";
 
 import "./navbar.css";
+import NavLinks from "./NavLinks";
+import { useState } from "react";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Navbar({ lang }) {
-	const translations = {
-		en: {
-			home: "home",
-			about: "about us",
-			realizations: "realizations",
-			contact: "Contact",
-			references: 'References',
-			esg: 'ESG'
-		},
-		pl: {
-			home: "Strona główna",
-			about: "o nas",
-			realizations: "realizacje",
-			contact: "Kontakt",
-			references: 'Referencje',
-			esg: 'ESG'
-		},
-	};
+	const [isMenuOpen, setIsMenuOpen] = useState(false);
+	const closeMenu = () => setIsMenuOpen(false);
 
 	return (
-		<nav>
-			<div className="navbar">
-				<Link href={`/${lang}`}>
-					<img src="/navbar-logo.png" alt="PVM Logo" />
-				</Link>
-				<ul className="menu">
-					<li>
-						<Link href={`/${lang}`}>{translations[lang].home}</Link>
-					</li>
-					<li>
-						<Link href={`/${lang}/about-us`}>{translations[lang].about}</Link>
-					</li>
-					<li>
-						<Link href={`/${lang}/realizations`}>
-							{translations[lang].realizations}
-						</Link>
-					</li>
-					<li>
-						<Link href={`/${lang}/references`}>
-							{translations[lang].references}
-						</Link>
-					</li>
-					<li>
-						<Link href={`/${lang}/esg`}>
-							{translations[lang].esg}
-						</Link>
-					</li>
+		<>
+			<nav>
+				<div className="navbar">
+					<Link href={`/${lang}`}>
+						<img src="/navbar-logo.png" alt="PVM Logo" />
+					</Link>
 
-					<li>
-						<a href="#contact">{translations[lang].contact}</a>
-					</li>
+					<ul className="navbar-menu menu">
+						<NavLinks lang={lang} />
+					</ul>
+					<div className="hide-on-mobile">
+						<LanguageSwitcher />
+					</div>
+
+					<div
+						className={`hamburger-icon ${isMenuOpen ? "active" : ""} `}
+						onClick={() => setIsMenuOpen(!isMenuOpen)}>
+						<span className="line-1"></span>
+						<span className="line-2"></span>
+						<span className="line-3"></span>
+					</div>
+				</div>
+			</nav>
+			<div className={`sidebar ${isMenuOpen ? "active" : ""}`}>
+				<ul className="menu">
+					<NavLinks lang={lang} onLinkClick={closeMenu} />
 				</ul>
 				<LanguageSwitcher />
 			</div>
-		</nav>
+		</>
 	);
 }
