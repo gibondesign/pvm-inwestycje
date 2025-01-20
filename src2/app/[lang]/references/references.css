@@ -1,0 +1,31 @@
+.references-hero {
+	background-image: url("/hero-references.jpg");
+}
+
+.references {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.reference-item {
+	max-width: 500px;
+	margin-bottom: 60px;
+	h3 {
+		padding: 8px 0;
+		color: #284465;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+	hr {
+		border: 0;
+		border-top: 1px solid rgba(129, 160, 199, 0.5);
+	}
+}
+
+.detail-box {
+	display: flex;
+	flex-direction: row;
+	align-items: end;
+}

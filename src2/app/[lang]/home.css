@@ -1,0 +1,53 @@
+.home-hero {
+	background-image: url('/hero-home.jpg');
+}
+
+.features {
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	flex-wrap: wrap;
+	gap: 60px;
+}
+
+.feature-box {
+	width: 324px;
+	padding: 8px;
+	flex: 0 1;
+	text-align: center;
+	background-color: #ffffff;
+	border-radius: 8px;
+	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+
+	h3 {
+		padding-top: 24px;
+		padding-bottom: 10px;
+	}
+    p{
+        padding-bottom: 24px;
+    }
+
+	.img-wrapper {
+		position: relative;
+		width: 100%;
+		height: 200px;
+		overflow: hidden;
+	}
+	.text-wrapper{
+		padding: 0 8px;
+	}
+}
+.green-gradient{
+	background: linear-gradient(to top, #DDEDE8, #ddede800 40px);
+}
+.green-btn {
+		background-color: var(--green-color);
+	
+}
+
+.responsive-svg {
+	display: block;
+	width: 100%;
+	height: auto;
+  }
+  

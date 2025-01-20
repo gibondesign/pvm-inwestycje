@@ -3,10 +3,7 @@
 	--foreground: #aea7a7;
 	--text-color: #000000;
 	--green-color: #4a9231;
-	--darkgrey-color: #6D6D6D;
 	--lightblue-color: #81a1c7;
-	--darkblue-color: #284465;
-	--mobile-breakpoint: 920px;
 }
 
 * {
@@ -127,16 +124,4 @@ a {
 }
 .green {
 	color: var(--green-color);
-}
-
-@media (max-width: var(--mobile-breakpoint)) {
-	.hide-on-mobile {
-		display: none;
-	}
-}
-
-@media (min-width: var(--mobile-breakpoint)) {
-	.mobile-only {
-		display: none;
-	}
 }

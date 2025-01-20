@@ -1,0 +1,119 @@
+.esg-hero {
+	background-image: url("/hero-energetics.jpg");
+	color: #fff;
+}
+
+.pros-list {
+	columns: 3 240px;
+	gap: 24px;
+
+	.feature {
+		padding: 8px;
+		display: flex;
+		flex-direction: row;
+		justify-content: start;
+		align-items: top;
+		p {
+			font-weight: 600;
+		}
+	}
+
+	img {
+		padding: 0 4px;
+	}
+}
+
+.round-box {
+	border-radius: 12px;
+	box-shadow: 4px 4px 8px #00000045;
+}
+.energy-hub {
+	max-width: 1200px;
+	width: 100%;
+}
+.energy-hub-title {
+	background-image: url("/energy-hub.jpg");
+	background-size: cover;
+	width: 100%;
+	max-width: 800px;
+	height: 400px;
+	padding: 40px;
+	margin-right: 20%;
+
+	h2 {
+		color: #fff;
+		text-align: center;
+		width: 220px;
+	}
+}
+
+.energy-hub-features {
+	background-color: #fff;
+	padding: 20px 40px;
+	max-width: 600px;
+	width: 100%;
+	margin-left: auto;
+	transform: translateY(-240px);
+	li {
+		list-style: none;
+		display: flex;
+		flex-direction: row;
+		gap: 12px;
+		padding: 8px 0;
+	}
+}
+
+.esg-features {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 80px;
+	padding: 0 60px;
+	margin-top: 40px;
+
+	.esg-feature {
+		position: relative;
+		max-width: 45%;
+		min-width: 400px;
+		padding: 20px 28px;
+		background-color: #fff;
+		border-radius: 16px;
+		box-shadow: 2px 2px 8px #0000006b;
+
+		.esg-feature-icon {
+			position: absolute;
+			top: -50px;
+			display: inline-block;
+			padding: 8px;
+			border-radius: 16px;
+			background: linear-gradient(to bottom, #a0c698, #fbfdff);
+			box-shadow: inset 0 4px 10px #4a9231;
+			img {
+				width: 80px;
+			}
+		}
+		
+		h3 {
+			padding-bottom: 12px;
+			text-transform: uppercase;
+		}
+	}
+	.esg-feature:nth-child(odd) {
+		.esg-feature-icon {
+			left: -40px;
+		}
+		h3 {
+			margin-left: 40px;
+		}
+	}
+
+	.esg-feature:nth-child(even) {
+		.esg-feature-icon {
+			right: -40px;
+		}
+		h3 {
+			margin-right: 40px;
+		}
+	}
+}

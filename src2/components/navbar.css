@@ -23,7 +23,7 @@ nav {
 .menu {
 	
 	font-family: "Inria Sans", sans-serif;
-	color: var(--darkgrey-color);
+	color: black;
 	text-transform: uppercase;
 	list-style: none;
 }
@@ -63,7 +63,7 @@ nav {
 	width: 48px;
 	height: 48px;
 	border-radius: 8px;
-	border: 1px solid var(--darkgrey-color);
+	border: 1px solid black;
 	position: relative;
 	cursor: pointer;
 	span {
@@ -71,7 +71,7 @@ nav {
 		width: 80%;
 		height: 0.15rem;
 		left: 50%;
-		background-color: var(--darkgrey-color);
+		background-color: black;
 		border-radius: 0.15rem;
 		transform: translate(-50%, -50%);
 		transition: transform 0.5s, width 0.5s, top 0.5s;

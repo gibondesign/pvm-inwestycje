@@ -1,0 +1,21 @@
+.about-us-hero {
+	background-image: url('/hero-about.jpg');
+}
+
+.about-us-box,
+.about-us-btns {
+	max-width: 800px;
+    width: 100%;
+}
+.about-us-box {
+	display: flex;
+	flex-direction: row;
+	align-items: start;
+	gap: 24px;
+	padding: 40px;
+}
+
+.about-us-btns {
+	display: flex;
+	justify-content: space-around;
+}
